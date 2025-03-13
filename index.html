@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کوتاه‌کننده لینک</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>کوتاه‌کننده لینک شیک</h1>
+        <form id="shortenForm">
+            <label for="content">لینک یا متن:</label>
+            <input type="text" id="content" required placeholder="لینکت رو اینجا بذار">
+
+            <label for="custom">اسم دلخواه (اختیاری):</label>
+            <input type="text" id="custom" placeholder="مثلاً mylink">
+
+            <label for="password">رمز (اختیاری):</label>
+            <input type="password" id="password" placeholder="رمز برای دسترسی">
+
+            <label for="maxUses">حداکثر استفاده (اختیاری):</label>
+            <input type="number" id="maxUses" min="1" placeholder="مثلاً 10">
+
+            <label for="expireDays">روزهای انقضا (اختیاری):</label>
+            <input type="number" id="expireDays" min="1" placeholder="مثلاً 7">
+
+            <label for="encryptionKey">کلید رمزنگاری (اختیاری):</label>
+            <input type="text" id="encryptionKey" placeholder="کلید مخفی">
+
+            <label for="disposable">یک‌بارمصرف:</label>
+            <input type="checkbox" id="disposable">
+
+            <button type="submit">کوتاه کن!</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
