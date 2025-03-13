@@ -2,7 +2,7 @@
 
 یه ابزار ساده و زیبا برای کوتاه کردن لینک‌ها و متن‌ها با امکانات پیشرفته مثل رمزگذاری، محدودیت استفاده، و انقضا. این پروژه شامل یه رابط کاربری (UI) توی GitHub Pages و یه API توی Cloudflare Workers هست.
 
-![پیش‌نمایش](https://im.gurl.eu.org/file/AgACAgEAAxkDAAI3R2fTCNakkwbbK1nM7r-n0mHzTa3iAAKCrTEbtPuZRput6RXySk8vAQADAgADdwADNgQ.jpg))  
+![پیش‌نمایش](https://imgur.com/a/5lymgbJ))  
 *(توضیح: بعداً می‌تونی یه اسکرین‌شات از صفحه‌ت بذاری و لینک تصویر رو جایگزین کنی.)*
 
 ## امکانات
