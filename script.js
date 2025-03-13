@@ -28,7 +28,9 @@ document.getElementById('shortenForm').addEventListener('submit', async (e) => {
 
         const result = await response.json();
         if (response.ok) {
-            document.getElementById('result').innerHTML = `لینک کوتاه‌شده: <a href="${result.url}" target="_blank">${result.url}</a>`;
+            const shortenedUrl = document.getElementById('shortenedUrl');
+            shortenedUrl.value = result.url; // نمایش لینک توی کادر
+            document.getElementById('result').style.display = 'flex'; // نمایش کادر نتیجه
         } else {
             document.getElementById('result').innerHTML = `خطا: ${result.error}`;
             document.getElementById('result').style.color = 'red';
@@ -37,4 +39,21 @@ document.getElementById('shortenForm').addEventListener('submit', async (e) => {
         document.getElementById('result').innerHTML = 'یه مشکلی پیش اومد!';
         document.getElementById('result').style.color = 'red';
     }
+});
+
+// منطق کپی کردن
+document.getElementById('copyButton').addEventListener('click', () => {
+    const shortenedUrl = document.getElementById('shortenedUrl');
+    shortenedUrl.select(); // انتخاب متن
+    navigator.clipboard.writeText(shortenedUrl.value) // کپی به کلیپ‌بورد
+        .then(() => {
+            const originalText = document.getElementById('copyButton').innerText;
+            document.getElementById('copyButton').innerText = 'کپی شد!';
+            setTimeout(() => {
+                document.getElementById('copyButton').innerText = originalText; // برگشت به حالت اولیه
+            }, 2000); // بعد از ۲ ثانیه
+        })
+        .catch(err => {
+            console.error('خطا در کپی: ', err);
+        });
 });
