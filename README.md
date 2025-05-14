@@ -1,4 +1,5 @@
 # کوتاه‌کننده لینک شیک
+![Visitor Count](https://komarev.com/ghpvc/?username=Argh94&repo=link-shortener-ui&label=بازدیدها)
 
 یه ابزار ساده و زیبا برای کوتاه کردن لینک‌ها و متن‌ها با امکانات پیشرفته مثل رمزگذاری، محدودیت استفاده، و انقضا. این پروژه شامل یه رابط کاربری (UI) توی GitHub Pages و یه API توی Cloudflare Workers هست.
 
